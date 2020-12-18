@@ -514,7 +514,7 @@ footer {
 }
 @media (max-width: 1024px) {
   .journal_text {
-    padding: 25px 20px;
+    padding: 10px 10px;
   }
   .journal_text h3 {
     margin: 0 0 15px 0;
