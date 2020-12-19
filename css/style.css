@@ -143,6 +143,26 @@ h2 {
   box-shadow: 0 0 10px 5px #dddddd;
   margin-bottom: 110px;
 }
+.journal_logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: show 3s linear;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .journal_img,
 .journal_text {
   display: inline-flex;
@@ -181,19 +201,6 @@ h2 {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   color: #212121;
-}
-.love_logo,
-.tree_logo,
-.water_logo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
 }
 .love,
 .tree,
@@ -580,7 +587,7 @@ footer {
     order: 5;
   }
   .water:after {
-    left: -24px;
+    left: -20px;
     top: 50px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
